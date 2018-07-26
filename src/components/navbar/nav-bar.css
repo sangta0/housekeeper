@@ -1,0 +1,4 @@
+.icon{text-align: center;color:#000;font-size: 1.2em;}
+.icon-block{display: block;font-size: 0.9em; margin: 3px 0;}
+.bottom-nav{position: fixed;bottom: 0;width: 100%;background: #fff;border-top:1px #ccc solid; padding:5px 0 5px 0;}
+.active .icon{color: #00f}
