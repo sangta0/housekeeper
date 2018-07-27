@@ -7,6 +7,7 @@ import  Room from '../../pages/room/index'
 import  User from '../../pages/user/index'
 import  Account from '../../pages/account/index'
 import NotFound from '../../pages/notFound/index'
+import Login from '../../pages/login/login'
 
 class Nav extends  Component {
     render(){
@@ -20,6 +21,7 @@ class Nav extends  Component {
                         <Route path={'/app/room'} component={Room} />
                         <Route path={'/app/user'} component={User} />
                         <Route path={'/app/account'} component={Account} />
+                        <Route path={'/login'} component={Login} />
                         <Route path={'/404'} component={NotFound} />
                         <Redirect to={'/404'} component={NotFound} />
                     </Switch>

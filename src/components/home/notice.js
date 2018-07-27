@@ -11,9 +11,10 @@ class Notice extends  Component{
     render(){
         var noticeMsg = this.props.noticeMsg;
         var agencyMsg = this.props.agencyMsg;
-        const  more = <span ><span className="more">更多</span><Icon type="right" className="more-arrow" /></span>;
-        const noticeIcon = <span className="am-icon-voice notice-voice "><i className="icon-index-header"></i></span>;
-        const agencyIcon = <span className="notice-agency"><i className="icon-index-header"></i></span>;
+        const  more = <span ><span className="more">更多</span><Icon type="right" className="more-arrow" /></span>
+        // const noticeIcon = <span className="am-icon-voice notice-voice "><i className="icon-index-header"></i></span>;
+        const noticeIcon = <span className="icon-icon-01c notice-bar-icon"><span className="path1"></span><span className="path2"></span></span>
+        const agencyIcon = <span className="icon-icon_2 notice-bar-icon"><span class="path1"></span><span class="path2"></span></span>
         return(
           <div className="notice-main">
               <NoticeBar mode="link" icon={noticeIcon} action={more} className="notice-bar notice-line">
