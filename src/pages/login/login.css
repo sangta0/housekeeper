@@ -1,5 +1,8 @@
 .login-icon{font-size:1.2rem;}
-.login-content{margin:6rem 1rem 1rem 1rem}
-.login-title{font-size:3rem;}
-.login-title-ms{font-size:1.2rem;color:#999999;margin: 1rem 0 4rem 0 }
+.login-content{margin:6rem 1rem 1rem 1rem;letter-spacing:1px;}
+.login-title{font-size:3rem;padding-left: 15px;}
+.login-title-ms{font-size:1.2rem;color:#999999;margin: 1rem 0 3rem 0;padding-left: 15px; }
 .login-title-ms .subject{color:#787dfb}
+.login-btn{margin: 2rem 0 0 0;text-align: center;}
+.login-topwd{color:#999999}
+.login-input-item{margin: 1rem 0}
