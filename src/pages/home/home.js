@@ -3,6 +3,7 @@ import IndexHeader from "../../components/header/indexHeader";
 import Notice from "../../components/home/notice"
 import { connect } from 'react-redux'
 import * as homeAction from '../../store/actions/homeAction'
+import IndexStyle from  '../../index.css'
 
 const mapStateToProps =(state) => {
     return {
@@ -25,7 +26,7 @@ class Home extends Component {
         return(
         <div>
             <IndexHeader />
-            <div className="content">
+            <div className={IndexStyle.content}>
                 <Notice noticeMsg={detailInfo.data.companyCityName} agencyMsg={detailInfo2.data.connectMan} />
             </div>
 

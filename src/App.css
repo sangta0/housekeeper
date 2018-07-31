@@ -17,7 +17,10 @@
 .App-intro {
   font-size: large;
 }
+.bottom-nav{position: fixed;bottom: 0;width: 100%;background: #fff;border-top:1px #ccc solid; padding:5px 0 5px 0;}
 
+.nav-a{color:#000000}
+.active{color:#0000ff}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

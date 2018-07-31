@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './nav-bar.css'
-
+import NavBarStyle from  './nav-bar.css'
+import FontsStyle from '../../fonts.css'
 class NavContent extends Component {
     render(){
         var iconName = this.props.iconName;
         var text = this.props.text;
         return (
-            <div className="icon">
-                <span className={iconName}></span>
-                <span className="icon-block">{text}</span>
+            <div className={NavBarStyle.icon}>
+                <span className={FontsStyle[iconName]}></span>
+                <span className={NavBarStyle["icon-block"]}>{text}</span>
             </div>
         );
     }
