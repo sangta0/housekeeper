@@ -3,6 +3,7 @@ import { Switch, Route,Redirect } from 'react-router-dom'
 import App from  '../../App'
 import NotFound from '../../pages/notFound/index'
 import Login from '../../pages/login/login'
+import {requireAuthentication} from '../../utils/authenticatedComponent'
 import  Home from '../../pages/home/home'
 import  Room from '../../pages/room/index'
 import  User from '../../pages/user/index'
@@ -16,7 +17,7 @@ class Nav extends  Component {
                     <Switch>
                         <Route path={'/login'} exact component={Login} />
                         <Route path={'/404'} exact  component={NotFound} />
-                        <Route path={'/'}  component={App} />
+                        <Route path={'/'}  component={requireAuthentication(App)} />
                   
                         <Redirect to={'/404'} component={NotFound} />
                     </Switch>

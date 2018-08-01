@@ -3,6 +3,7 @@ import AppStyle from './App.css';
 import { NavLink,Route,Switch } from 'react-router-dom'
 import { Flex } from 'antd-mobile';
 import NavContent from './components/navbar/navContent'
+import './utils/authenticatedComponent'
 
 import  Home from './pages/home/home'
 import  Room from './pages/room/index'

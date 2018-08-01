@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import IndexHeader from "../../components/header/indexHeader";
 import Notice from "../../components/home/notice"
+import HomeBlock from "../../components/home/homeBlock"
+import Rankings from "../../components/home/rankings"
 import { connect } from 'react-redux'
 import * as homeAction from '../../store/actions/homeAction'
 import IndexStyle from  '../../index.css'
@@ -28,6 +30,8 @@ class Home extends Component {
             <IndexHeader />
             <div className={IndexStyle.content}>
                 <Notice noticeMsg={detailInfo.data.companyCityName} agencyMsg={detailInfo2.data.connectMan} />
+                <HomeBlock leftTitle="123213" rightTitle="2323232" />
+                <Rankings/>
             </div>
 
         </div>

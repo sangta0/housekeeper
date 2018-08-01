@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { InputItem, Button, WhiteSpace, WingBlank } from 'antd-mobile';
 import { createForm } from 'rc-form';
 import { NavLink } from 'react-router-dom'
-import './login.css'
+import LoginStyle from  './login.css'
+import FontStyle from '../../fonts.css'
 
 class Login extends Component {
     constructor(props) {
@@ -14,23 +15,22 @@ class Login extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        this.props.router.push('/app/list');
+        let token = {"login":"tom"};
+        localStorage.setItem("token",JSON.stringify(token))
+        this.props.history.push('/');
     }
 
     render() {
         const { getFieldDecorator, getFieldsError } = this.props.form;
         const hasError = fieldsError => Object.keys(fieldsError).some(field => fieldsError[field]);
-        const company = <span className="icon-login-1 login-icon"></span>
-        const iconName = <span className="icon-login-2 login-icon"></span>
-        const iconPassword = <span className="icon-login-3 login-icon"></span>
+        const company = <span className={FontStyle["icon-login-1"] + " "+ LoginStyle["login-icon"]}></span>
+        const iconName = <span className={FontStyle["icon-login-2"] + " "+ LoginStyle["login-icon"]}></span>
+        const iconPassword = <span className={FontStyle["icon-login-3"] + " "+ LoginStyle["login-icon"]}></span>
         return(
             <div id="login">
-                <div className="login-content">
-
-                     <div className="login-title">您好，</div>
-                     <div className="login-title-ms">欢迎登陆<span className="subject">巧寓PMS</span></div>
-
-
+                <div className={LoginStyle["login-content"]}>
+                     <div className={LoginStyle["login-title"]}>您好，</div>
+                     <div className={LoginStyle["login-title-ms"]}>欢迎登陆<span className={LoginStyle["subject"]}>巧寓PMS</span></div>
 
                     <WhiteSpace size="sm" />
                     {getFieldDecorator('companyCode', {
@@ -38,7 +38,7 @@ class Login extends Component {
                             required: true,
                         }],
                     })(
-                        <InputItem autoFocus placeholder="公司码" labelNumber={2}  className="login-input-item">{company}</InputItem>
+                        <InputItem autoFocus placeholder="公司码" labelNumber={2}  className={LoginStyle["login-input-item"]}>{company}</InputItem>
                     )}
 
                     {getFieldDecorator('userName', {
@@ -46,7 +46,7 @@ class Login extends Component {
                             required: true,
                         }],
                     })(
-                        <InputItem  placeholder="手机号码" type="phone" labelNumber={2} className="login-input-item">{iconName}</InputItem>
+                        <InputItem  placeholder="手机号码" type="phone" labelNumber={2} className={LoginStyle["login-input-item"]}>{iconName}</InputItem>
                     )}
 
                     {getFieldDecorator('password', {
@@ -54,7 +54,7 @@ class Login extends Component {
                             required: true,
                         }],
                     })(
-                        <InputItem type="password" placeholder="登陆密码" labelNumber={2} className="login-input-item">{iconPassword}</InputItem>
+                        <InputItem type="password" placeholder="登陆密码" labelNumber={2} className={LoginStyle["login-input-item"]}>{iconPassword}</InputItem>
                     )}
 
                     <WhiteSpace />
@@ -69,8 +69,8 @@ class Login extends Component {
                         </Button>
                     </WingBlank>
 
-                    <WingBlank className="login-btn">
-                        <NavLink to="/"><span className="login-topwd">忘记密码</span></NavLink>
+                    <WingBlank className={LoginStyle["login-btn"]}>
+                        <NavLink to="/"><span className={LoginStyle["login-topwd"]}>忘记密码</span></NavLink>
                     </WingBlank>
                 </div>
             </div>
