@@ -9,6 +9,8 @@ import  Home from './pages/home/home'
 import  Room from './pages/room/index'
 import  User from './pages/user/index'
 import  Account from './pages/account/index'
+import AddRoom from './pages/room/addRoom'
+import AddJointRent from './pages/room/addJointRent'
 
 class App extends Component {
   render() {
@@ -19,10 +21,12 @@ class App extends Component {
             <Route path={'/'} exact  component={Home} />
             <Route path={'/app'} exact   component={Home} />
             <Route path={'/app/home'}    component={Home} />
-            <Route path={'/app/room'}  component={Room} />
+            <Route path={'/app/room'} exact  component={Room} />
             <Route path={'/app/user'}  component={User} />
             <Route path={'/app/account'}  component={Account} />
-          </Switch>  
+            <Route path={'/app/room/addRoom'}  component={AddRoom} />
+            <Route path={'/app/room/addJointRent'}  component={AddJointRent} />
+          </Switch>
         </div>
         <div className={AppStyle["bottom-nav"]}>
       
