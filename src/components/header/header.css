@@ -1,4 +1,4 @@
-.header{width: 100%;position: fixed;top:0;text-align: center;background: #fff;font-size: 18px;padding:10px 0;box-shadow:1px 2px 1px #ccc;}
+.header{width: 100%;position: fixed;top:0;text-align: center;background: #fff;font-size: 18px;padding:10px 0;box-shadow:1px 2px 1px #ccc;z-index: 100;}
 .header-left{float: left;margin-left: 5px;}
 .header-right{float:right;margin-right: 5px}
 .nav-link{color:#000;}
