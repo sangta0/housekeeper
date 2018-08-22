@@ -11,6 +11,7 @@ import  User from './pages/user/index'
 import  Account from './pages/account/index'
 import AddRoom from './pages/room/addRoom'
 import AddJointRent from './pages/room/addJointRent'
+import Dealt from './pages/dealt/dealt'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path={'/app/account'}  component={Account} />
             <Route path={'/app/room/addRoom'}  component={AddRoom} />
             <Route path={'/app/room/addJointRent'}  component={AddJointRent} />
+            <Route path={'/app/dealt'}  component={Dealt} />
           </Switch>
         </div>
         <div className={AppStyle["bottom-nav"]}>

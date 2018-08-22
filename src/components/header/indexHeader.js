@@ -22,7 +22,7 @@ class IndexHeader extends Component{
                              visible={this.state.visible}
                              overlay={[
                                  (<Item key="4" value="scan" icon={<i className={FontsStyle["icon-home"]}></i>} data-seed="logId"><NavLink to="/app/room/addRoom" className={HeaderStyle["nav-link"]} >添加房源</NavLink></Item>),
-                                 (<Item key="5" value="special" icon={<i className={FontsStyle["icon-dealt"]}></i>} style={{ whiteSpace: 'nowrap' }}><NavLink to="/app/room" className={HeaderStyle["nav-link"]}>添加代办</NavLink></Item>),
+                                 (<Item key="5" value="special" icon={<i className={FontsStyle["icon-dealt"]}></i>} style={{ whiteSpace: 'nowrap' }}><NavLink to="/app/dealt" className={HeaderStyle["nav-link"]}>添加代办</NavLink></Item>),
                                  (<Item key="6" value="button ct" icon={<i className={FontsStyle["icon-accounting"]}></i>} ><NavLink to="/app/room" className={HeaderStyle["nav-link"]}>收房核算</NavLink></Item>),
                              ]}
                              align={{
