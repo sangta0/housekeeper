@@ -1,2 +1,7 @@
-.dealt-content{width: 100%;margin:3.5rem 0;flex-basis: initial; background: none}
+.dealt-content{width: 100%;margin:3.5rem 0; background: none}
+.dealt-list-content{width: 100%;margin:2.5rem 0; background: none}
 .dealt-btn{position: fixed; bottom: 4rem;width: 100%}
+.dealt-search{margin: 0.5rem;height: 2rem;  z-index: 90 !important;position: relative;}
+.dealt-search-left{width: 30%;float:left;margin-top:0.5rem;}
+.dealt-search-right{width: 70%;float: right}
+.dealt-search-bar{background-color: rgba(0,0,0,0)!important;}

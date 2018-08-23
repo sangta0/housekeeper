@@ -29,7 +29,7 @@ class Home extends Component {
         <div>
             <IndexHeader />
             <div className={IndexStyle.content}>
-                <Notice noticeMsg={detailInfo.data.companyCityName} agencyMsg={detailInfo2.data.connectMan} />
+                <Notice noticeMsg={detailInfo.data.companyCityName} agencyMsg={detailInfo2.data.connectMan} historys={this.props.history} />
                 <HomeBlock leftTitle="123213" rightTitle="2323232" />
                 <Rankings/>
             </div>

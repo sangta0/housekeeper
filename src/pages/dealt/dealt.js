@@ -22,7 +22,7 @@ class Dealt extends Component{
                         value={this.state.date}
                         onChange={date => this.setState({ date })}
                     >
-                        <List.Item arrow="horizontal">设置提醒时间</List.Item>
+                        <List.Item arrow="horizontal" className={dealtStyle["extra"]}>设置提醒时间</List.Item>
                     </DatePicker>
                 </div>
                <div className={dealtStyle["dealt-btn"]}>
